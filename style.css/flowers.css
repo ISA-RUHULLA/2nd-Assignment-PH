@@ -91,6 +91,57 @@
     font-family: inter, sans-serif;
   }
 
+            /* Flower Lover Content */
+
+.flower-lover-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px ;
+  margin-top: 200px;
+}
+.left{
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  margin-right: 32px;
+  position: relative;
+}
+.left img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.trusted-badge{
+  position: absolute;
+  top: -130px;
+  right: -110px;
+  width: 266px;
+  z-index: 1;
+  
+}
+.right{
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  padding: 20px 40px;
+}
+.right h1 {
+  font-family: noto-serif, serif;
+  margin-bottom: 20px;
+}
+.right ul {
+  list-style: circle;
+  padding: 0;
+}
+.right ul li {
+  margin-bottom: 10px;
+  font-family: inter, sans-serif;
+}
+      
+
+
 
 
 @media screen and (max-width: 430px) {
@@ -142,5 +193,25 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  
+      /* Flower Lover Content */
+  .flower-lover-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+  .left {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .trusted-badge {
+    display: none;
+  }
+
+  .right {
+    padding: 20px;
+    text-align: start;
+  }
 }
