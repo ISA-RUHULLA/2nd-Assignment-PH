@@ -139,8 +139,92 @@
   margin-bottom: 10px;
   font-family: inter, sans-serif;
 }
-      
+      /* Latest Deals */
 
+.deals{
+  margin-top: 100px;
+}
+.deals h2 {
+  font-family: noto-serif, serif;
+}
+.deals p {
+  font-family: inter, sans-serif;
+  margin-top: 10px;
+  color: #6B7280;
+}
+
+/* Latest Deals */
+
+.deal-contain-card {
+      display: flex;
+      gap: 20px;
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 0 20px;
+      flex-wrap: wrap;
+    }
+
+    .left-deals {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .right-deal {
+      flex: 2;
+      min-width: 300px;
+    }
+
+    .card {
+      position: relative;
+      border-radius: 15px;
+      overflow: hidden;
+      height: 180px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .card.large {
+      height: 380px;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .overlay h3 {
+      font-family: noto-serif, serif;
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .overlay h2 {
+      font-family: noto-serif, serif;
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .overlay a {
+      font-family: inter, sans-serif;
+      margin-top: 10px;
+      font-size: 16px;
+      color: white;
+      text-decoration: underline;
+      font-weight: 500;
+    }
 
 
 
@@ -214,4 +298,13 @@
     padding: 20px;
     text-align: start;
   }
+
+                   /* Latest Deals */
+  .mobile-break {
+    display: none;
+  } 
+  .card.large {
+    height: 230px;
+  }              
+  
 }
