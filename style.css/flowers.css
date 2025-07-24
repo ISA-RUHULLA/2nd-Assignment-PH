@@ -76,7 +76,20 @@
 }
 
 
+/* Plant Section */
 
+.plant-title h1 {
+  font-family: noto-serif, serif;
+
+}
+.plant-title p{
+  font-family: inter, sans-serif;
+  margin: 16px 128px 20px;
+  
+}
+.plant-info {
+    font-family: inter, sans-serif;
+  }
 
 
 
@@ -115,4 +128,19 @@
     margin-top: 13px;
   }
 
+  /* Plant Section */
+  .plant-title {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0;
+  }
+  .plant-title p {
+    margin: 16px 0;
+  }
+  
+  .plant-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  
 }
